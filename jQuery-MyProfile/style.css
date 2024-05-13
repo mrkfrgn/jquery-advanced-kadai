@@ -43,6 +43,7 @@ body {
   }
 
   #about {
+    opacity: 0;
     transition: opacity 300ms;
   }
 
@@ -62,6 +63,16 @@ body {
   }
   #introduction {
     margin-left: 100px;
+  }
+
+ #works, #about {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  .fade-in {
+    opacity: 1.0;
+    transition: opacity 300ms;
   }
   
   ul {
@@ -93,6 +104,8 @@ body {
   }
 
   footer {
+    opacity: 0;
+    transition: opacity 300ms;
     text-align: center;
     margin: 50px;
   }
