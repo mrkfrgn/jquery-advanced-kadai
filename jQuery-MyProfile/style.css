@@ -65,14 +65,13 @@ body {
     margin-left: 100px;
   }
 
- #works, #about {
+  .fade-out {
     opacity: 0;
-    transition: opacity 300ms;
+    transition: opacity 2000ms;
   }
 
-  .fade-in {
+  .fade-out .fade-in {
     opacity: 1.0;
-    transition: opacity 300ms;
   }
   
   ul {

@@ -52,7 +52,7 @@ $(function () {
   });
 
   $(window).scroll(function () {
-    $('.fade-section').each(function(i) {
+    $('.fade-out').each(function(i) {
       var bottom_of_object = $(this).offset().top + $(this).outerHeight()/4;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
