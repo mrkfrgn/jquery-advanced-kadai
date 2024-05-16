@@ -52,14 +52,14 @@ $(function () {
   });
 
   $(window).scroll(function () {
-    $('.fade-out').each(function(i) {
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight()/4;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      if(bottom_of_window > bottom_of_object){
+    const scrollAmount = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    $('fade-out').each(function () {
+      const position = $(this).offset().top;
+      if (scrollAmount > position - windowHeight + 100) {
         $(this).addClass('fade-in');
       }
-      });
-     });
+    });
+  });
 });
 
